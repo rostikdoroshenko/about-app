@@ -1,10 +1,25 @@
 <div class="container">
-  
-  
-  <h1>Hello Angular</h1>
-
-  <app-card></app-card>
-  <app-card></app-card>
-
-
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li role="presentation">
+          <a routerLink="/">Home</a>
+        </li>
+        <li role="presentation">
+          <a routerLink="education">Education</a>
+        </li>
+        <li role="presentation">
+          <a routerLink="qualification">Qualification</a>
+        </li>
+        <li role="presentation">
+          <a routerLink="work">Work Experience</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

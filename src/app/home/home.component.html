@@ -1,11 +1,19 @@
 <div class="home">
-    <h4>Welcome to Server Manager 4.0</h4>
-
-    <p>Manage your Servers and Users.</p>
+    <div>
+        <h3>Rostyslav Doroshenko</h3>
+        <button class="btn btn-primary" (click)="showMoreBtnClicked()">Show More</button>
+        <div *ngIf="showMore">
+            <p>Phone - 0984427798</p>
+            <p>Married</p>
+            <p>Date of birth - 15th, November, 1990</p>
+            <p>Email - rostyslav.doroshenko@gmail.com</p>
+        </div>
+        
+    </div>
     
-    <button class="btn btn-primary" (click)="onLoadServer(1)">Load Server 1</button>
+    <!-- <button class="btn btn-primary" (click)="onLoadServer(1)">Load Server 1</button>
     
     <button class="btn btn-default" (click)="onLogin()">Login</button>
     
-    <button class="btn btn-default" (click)="onLogout()">Logout</button>
+    <button class="btn btn-default" (click)="onLogout()">Logout</button> -->
 </div>
